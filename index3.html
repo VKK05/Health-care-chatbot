@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Health Condition Chatbot</title>
+</head>
+
+<body>
+    <h1>Health Condition Chatbot</h1>
+    <form action="/" method="POST">
+        <!-- health conditions -->
+        <label for="condition">Health Condition:</label>
+        <select id="condition" name="condition">
+            <option value="Allergies">Allergies </option>
+            <option value="Asthma">Asthma</option>
+            <option value="Depression">Depression</option>
+            <option value="Bipolar disorder">Bipolar disorder</option>
+            <option value="Schizophrenia">Schizophrenia</option>
+            <option value="Chronic pain conditions ">Chronic pain conditions </option>
+            <option value="Migraine">Migraine</option>
+            <option value="High cholesterol">High cholesterol</option>
+            <option value="Diabetes">Diabetes</option>
+        </select>
+        <!-- severity -->
+        <br>
+        <label for="severity">Severity:</label>
+        <select id="severity" name="severity">
+            <option value="Low">Low</option>
+            <option value="Moderate">Moderate</option>
+            <option value="Severe">Severe</option>
+            <option value="Critical">Critical</option>
+            <option value="Chronic">Chronic</option>
+        </select>
+        <br>
+        <!-- user query -->
+        <label for="query">Query:</label>
+        <input type="text" id="query" name="query">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <div>
+        <h2>Response:</h2>
+        <p style="font-family: Georgia, serif;">{{ response }}</p>
+    </div>
+</body>
+
+</html>
